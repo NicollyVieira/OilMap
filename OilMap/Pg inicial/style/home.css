@@ -1,0 +1,23 @@
+body{
+    background-color: #E3F0E2;
+
+}
+
+#txt{
+    color: #000000;
+    font-size: 30px;
+}
+
+.texto1{
+   background-color: #C3E7BF;
+   height: 10%;
+   padding-bottom: 30%;
+   margin: 40px;
+   text-align: left;
+   border-radius: 91px;
+
+}
+
+.card{
+    display:block;
+}

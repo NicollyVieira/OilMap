@@ -1,0 +1,94 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    margin: 0;
+    background-color: #f1f1f1;
+}
+/*--------------------------------------------*/
+    /*cabeçalho*/
+.cabecalho{
+    text-align: center;
+    background-color: #0F6300;
+}
+
+.cabecalho h2{
+    margin: 0;
+    font-size: 2em;
+}
+
+.cabecalho img{
+    width: 10vw;
+}
+/*--------------------------------------------*/
+    /*img simbolo petro*/
+nav img{
+    width: 50px;
+    float: right;
+}
+
+/*--------------------------------------------*/
+    /*img pesquisa*/
+nav h4{
+    margin: 10px 0 0 10vw;
+    font-size: 2em;
+}
+nav input{
+    padding: 5px;
+    margin-left: 2vw;
+    width: 20vw;
+    background-color: #005e35;
+    border-radius: 20px;
+    border: none;
+    font-size: 1em;
+}
+.faixa{
+    background-color: yellow;
+    height: 10px;
+   
+}
+.estruturanav{
+    margin-left: 1vw;
+    display: flex;
+    padding: 5px;
+}
+
+.reparo{
+    background-color: #00814A;
+    border-radius: 0 0 20px 0;
+}
+/*--------------------------------------------*/
+    /*Conteudo*/
+.filtros{
+    margin-top: 5vh;
+    border-radius: 10px;
+    background-color: #C1C1C1;
+    padding: 10px;
+    display: grid;
+}
+.filtros button{
+    background-color: #C1C1C1;
+    font-size: 1.5em;
+    text-align: left;
+    border: none;
+    margin: 10px;
+}
+
+.info{
+    margin-top: 5vh;
+    border-radius: 10px;
+    background-color: #C1C1C1;
+    padding: 10px;
+    display: none;
+}
+
+.mapa{
+    margin-left: 10vw;
+}
+/*--------------------------------------------*/
+    /*roda pé*/
+footer{
+    padding: 15px;
+    background-color: #0F6300;
+    text-align: center;
+}
