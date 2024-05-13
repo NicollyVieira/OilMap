@@ -1,72 +1,91 @@
-*{
+/*estilos da minha página web*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
     font-family: Arial, Helvetica, sans-serif;
+    color: black;
 }
-body{
-    margin: 0;
-    background-color: #f1f1f1;
-}
-/*--------------------------------------------*/
-    /*cabeçalho*/
-.cabecalho{
+
+/*-----------------------------------------------*/
+/*geral*/
+.text-center {
     text-align: center;
-    background-color: #0F6300;
 }
 
-.cabecalho h2{
-    margin: 0;
-    font-size: 2em;
+.margin-top-40 {
+    margin-top: 40px;
 }
 
-.cabecalho img{
-    width: 10vw;
-}
-/*--------------------------------------------*/
-    /*img simbolo petro*/
-nav img{
-    width: 50px;
-    float: right;
+/*------------------------------------------------*/
+.container-cabecalho {
+    text-align: center;
+    padding: 20px;
+    background-color: #04233f;
+    background-image: url('img/home.png');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-/*--------------------------------------------*/
-    /*img pesquisa*/
-nav h4{
-    margin: 10px 0 0 10vw;
-    font-size: 2em;
-}
-nav input{
-    padding: 5px;
-    margin-left: 2vw;
-    width: 20vw;
-    background-color: #005e35;
-    border-radius: 20px;
-    border: none;
-    font-size: 1em;
-}
-.faixa{
-    background-color: yellow;
-    height: 10px;
-   
-}
-.estruturanav{
-    margin-left: 1vw;
+.logo_empresa{
+    max-height: 150px;
+    max-width: 150px;
     display: flex;
-    padding: 5px;
 }
 
-.reparo{
-    background-color: #00814A;
-    border-radius: 0 0 20px 0;
+
+/*------------------------------------------------*/
+.container-navegacao {
+    text-align: left;
+    padding: 20px;
+    font-size: 25px;
 }
-/*--------------------------------------------*/
-    /*Conteudo*/
-.filtros{
+
+.container-navegacao a {
+    font-size: 1.5em;
+    margin: 0px 50px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.container-navegacao a:hover {
+    color: #000;
+}
+/* 
+#divBusca{
+    background-color:#2F4F4F;
+    border:solid 1px;
+    border-radius:15px;
+    width:300px;
+  }
+  
+  #txtBusca{
+    float:left;
+    background-color:transparent;
+    padding-left:5px;
+    font-style:italic;
+    font-size:18px;
+    border:none;
+    height:32px;
+    width:260px;
+  } */
+
+/*------------------------------------------------*/
+
+
+/*Conteudo*/
+.filtros {
     margin-top: 5vh;
     border-radius: 10px;
     background-color: #C1C1C1;
     padding: 10px;
     display: grid;
 }
-.filtros button{
+
+.filtros button {
     background-color: #C1C1C1;
     font-size: 1.5em;
     text-align: left;
@@ -74,7 +93,7 @@ nav input{
     margin: 10px;
 }
 
-.info{
+.info {
     margin-top: 5vh;
     border-radius: 10px;
     background-color: #C1C1C1;
@@ -82,13 +101,73 @@ nav input{
     display: none;
 }
 
-.mapa{
+.mapa {
     margin-left: 10vw;
 }
+
 /*--------------------------------------------*/
-    /*roda pé*/
-footer{
+/*roda pé*/
+footer {
     padding: 15px;
     background-color: #0F6300;
     text-align: center;
 }
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgba(0,0,0,0.4); /* Black background with opacity */
+  }
+
+.modal-content {
+    background-color: #888;
+    margin:  20% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    align-items: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close-btn:hover,
+  .close-btn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .lists-container {
+    display: flex; /* Ativa o Flexbox */
+    align-items: flex-start; /* Alinha os itens ao início do container */
+    width: 100%; /* Usa toda a largura disponível do contentor modal */
+  }
+  
+  .list {
+    width: 45%; /* Cada lista ocupa 45% da largura do container */
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Sombra opcional para destaque */
+    list-style-type: none; /* Remove marcadores de lista */
+    background: #888; /* Fundo branco para as listas */
+    margin: 10px; /* Espaçamento entre as listas */
+  }
+  
+  .list li {
+    padding: 8px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .list li:last-child {
+    border-bottom: none;
+  }

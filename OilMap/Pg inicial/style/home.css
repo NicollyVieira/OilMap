@@ -28,8 +28,6 @@ body {
     background-image: url('../imagens/home.png');
     background-size: cover;
     background-repeat: no-repeat;
-    
-    
 }
 
 .logo_empresa{
@@ -37,12 +35,7 @@ body {
     max-width: 150px;
     display: flex;
 }
-.container-cabecalho h3 {
-    font-weight: 600;
-    font-size: 2em;
-    color: #fff
-    ;
-}
+
 
 /*------------------------------------------------*/
 .container-navegacao {
@@ -318,8 +311,7 @@ body {
 
 /*------------------------------------------------*/
 footer {
+    padding: 15px;
+    background-color: #0F6300;
     text-align: center;
-    padding: 80px;
-    background-color: #02111f;
-    color: gray;
 }
